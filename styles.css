@@ -1,0 +1,42 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    background-size: 100px;
+    background-repeat: repeat;
+    background-image: url("gambar/garry.png");
+    background-color: midnightblue;
+    font-size: larger;
+    text-shadow: 2px 2px 2px red;
+    color: yellow;
+}
+#Welcome {
+    color: cyan;
+    text-shadow: 2px 2px magenta;
+    font-size: 40px;
+    font-weight: bold;
+}
+td>a {
+    border: 2px inset cyan;
+    border-radius: 10px;
+    padding-block: 10px;
+}
+p {
+    width: 700px;
+}
+a {
+    text-shadow: 2px 2px black;
+}
+a:link {
+    color: cyan;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    color: blue;
+}
+a:visited {
+    color: magenta;
+}
