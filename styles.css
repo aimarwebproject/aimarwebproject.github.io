@@ -1,5 +1,5 @@
 * {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
     background-size: 100px;
@@ -8,6 +8,7 @@ body {
     background-image: url("gambar/garry.png");
     background-color: midnightblue;
     font-size: larger;
+    image-rendering: pixelated;
     text-shadow: 2px 2px 2px red;
     color: yellow;
 }
@@ -19,8 +20,10 @@ body {
 }
 td>a {
     border: 2px inset cyan;
-    border-radius: 10px;
-    padding-block: 10px;
+    border-radius: 5px;
+    padding-block: 5px;
+    padding-inline: 5px;
+    line-height: 2px;
 }
 p {
     width: 700px;
@@ -40,4 +43,13 @@ a:active {
 }
 a:visited {
     color: magenta;
+}
+.spinimg {
+  animation: scaleImageBackAndForth 2s linear infinite;
+}
+
+@keyframes scaleImageBackAndForth {
+  0% { transform: scale(1);}
+  50% { transform: scale(1.2);}
+  100% { transform: scale(1);}
 }
