@@ -18,6 +18,15 @@ body {
     font-size: 40px;
     font-weight: bold;
 }
+#CoolImg {
+    border: 3px outset yellow;
+    border-radius: 5px;
+    box-shadow: 2px 2px red;
+}
+#CoolImg:hover {
+    border: 3px outset cyan;
+    box-shadow: 2px 2px magenta;
+}
 td>a {
     border: 2px inset cyan;
     border-radius: 5px;
@@ -31,23 +40,23 @@ p {
 a {
     text-shadow: 2px 2px black;
 }
-a:link {
+video {
+    border: 4px inset yellow;
+    box-shadow: 2px 2px red;
+}
+a:visited, a:link {
     color: cyan;
     text-decoration: underline;
 }
-a:hover {
+a:focus, a:hover {
     text-decoration: none;
 }
 a:active {
-    color: blue;
-}
-a:visited {
-    color: magenta;
+    color: orange;
 }
 .spinimg {
   animation: scaleImageBackAndForth 2s linear infinite;
 }
-
 @keyframes scaleImageBackAndForth {
   0% { transform: scale(1);}
   50% { transform: scale(1.2);}
