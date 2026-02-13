@@ -23,10 +23,6 @@ body {
     border-radius: 5px;
     box-shadow: 2px 2px red;
 }
-#CoolImg:hover {
-    border: 3px outset cyan;
-    box-shadow: 2px 2px magenta;
-}
 td>a {
     border: 2px inset cyan;
     border-radius: 5px;
@@ -48,11 +44,8 @@ a:visited, a:link {
     color: cyan;
     text-decoration: underline;
 }
-a:focus, a:hover {
-    text-decoration: none;
-}
 a:active {
-    color: orange;
+    color: blue;
 }
 .spinimg {
   animation: scaleImageBackAndForth 2s linear infinite;
