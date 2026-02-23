@@ -44,8 +44,11 @@ a:visited, a:link {
     color: cyan;
     text-decoration: underline;
 }
+a:focus, a:hover {
+    color: yellow
+}
 a:active {
-    color: blue;
+    color: azure;
 }
 .spinimg {
   animation: scaleImageBackAndForth 2s linear infinite;
