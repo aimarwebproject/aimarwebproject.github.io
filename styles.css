@@ -3,7 +3,7 @@ body {
     background-repeat: repeat;
     background-attachment: scroll;
     background-color: black;
-    background-image: url('gambar/garry.png');
+    background-image: url('gambar/bg.png');
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: larger;
     image-rendering: pixelated;
@@ -43,7 +43,30 @@ a:visited, a:link {
     color: cyan;
 }
 a:active {
-    color: azure;
+    color: yellow;
+}
+.restimg {
+    pointer-events: none;
+    user-select: none;
+}
+#BannerKiri {
+    background-image: url('gambar/banner_stiker_kiri.png');
+    border: 2px solid cyan;
+    box-shadow: 4px 4px red;
+    height: 600px;
+    width: 100px;
+    position: absolute;
+    top: 400px;
+}
+#BannerKanan {
+    background-image: url('gambar/banner_artikel_kanan.png');
+    border: 2px solid cyan;
+    box-shadow: -4px 4px red;
+    height: 600px;
+    width: 100px;
+    position: absolute;
+    top: 400px;
+    right: 8px;
 }
 .scaleimg {
     animation: scaleImageBackAndForth 2s linear infinite;
