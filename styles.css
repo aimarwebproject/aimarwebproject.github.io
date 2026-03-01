@@ -1,12 +1,10 @@
-* {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 body {
-    background-size: 80px;
+    background-size: 100px;
     background-repeat: repeat;
     background-attachment: scroll;
-    background-image: url("gambar/garry.png");
-    background-color: midnightblue;
+    background-color: black;
+    background-image: url('gambar/garry.png');
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: larger;
     image-rendering: pixelated;
     text-shadow: 2px 2px 2px red;
@@ -14,7 +12,7 @@ body {
 }
 #Welcome {
     color: cyan;
-    text-shadow: 2px 2px magenta;
+    text-shadow: 3px 3px red;
     font-size: 40px;
     font-weight: bold;
 }
@@ -34,7 +32,8 @@ p {
     width: 700px;
 }
 a {
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px red;
+    text-decoration: underline;
 }
 video {
     border: 4px inset yellow;
@@ -42,19 +41,23 @@ video {
 }
 a:visited, a:link {
     color: cyan;
-    text-decoration: underline;
-}
-a:hover {
-    color: yellow
 }
 a:active {
     color: azure;
 }
-.spinimg {
-  animation: scaleImageBackAndForth 2s linear infinite;
+.scaleimg {
+    animation: scaleImageBackAndForth 2s linear infinite;
+}
+.rotimg {
+    animation: rotateImageBackAndForth 2s ease-in-out infinite;
 }
 @keyframes scaleImageBackAndForth {
-  0% { transform: scale(1);}
-  50% { transform: scale(1.2);}
-  100% { transform: scale(1);}
+    0% { transform: scale(1);}
+    50% { transform: scale(1.2);}
+    100% { transform: scale(1);}
+}
+@keyframes rotateImageBackAndForth {
+    0%   { transform: rotate(-5deg) scale(1); }
+    50%  { transform: rotate(5deg) scale(1.08);}
+    100% { transform: rotate(-5deg) scale(1);}
 }
